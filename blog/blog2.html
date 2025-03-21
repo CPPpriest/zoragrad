@@ -3,103 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Principles for Beginners - My Blog</title>
+    <title>LiDAR Sensors Types and Their Special Properties - ZORAGRAD BLOG</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">My Blog</div>
+            <div class="logo">ZORAGRAD BLOG</div>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="blog1.html">Blog Post 1</a></li>
-                <li><a href="blog2.html" class="active">Blog Post 2</a></li>
+                <li><a href="https://kilinc.blog">Profile</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <article class="blog-post">
-            <h1>Design Principles for Beginners</h1>
-            <div class="meta">Posted on June 2, 2023 | Web Design</div>
-            
-            <img src="../assets/blog2.jpg" alt="Design elements on a desk">
+            <h1>LiDAR Sensors Types and Their Special Properties</h1>
+            <div class="meta">Posted on March 15, 2025   •   6 min read   •   Ömer Kılınç</div>
             
             <p>
-                Design is not just about making things look pretty. Good design solves problems, communicates effectively, and creates memorable experiences. In this blog post, we'll explore some fundamental design principles that can help beginners create more effective and attractive web designs.
+                LiDAR (Light Detection and Ranging) sensors work by emitting laser pulses toward a target and measuring the time it takes for the reflected pulses to return.
+            </p>
+
+            <h2>Step-by-Step Process of LiDAR Scanning</h2>
+            
+            <ol>
+                <li>The scanning process begins in the environment.</li>
+                <li>The LiDAR sensor emits laser pulses toward a target object.</li>
+                <li>The pulses reflect off the object and return to the sensor.</li>
+                <li>The sensor calculates the time taken for the pulse to travel and determines the 3D coordinates of the point.</li>
+                <li>This process loops millions of times to collect all necessary points.</li>
+                <li>The sensor records and stores these points in a '.las' file.</li>
+                <li>Metadata (timestamps, sensor position, scanning settings etc.) is added to the `.las` file.</li>
+                <li>The final `.las` file is outputted.</li>
+            </ol>
+
+            <img src="../assets/blog2/lorem-flickr-1280x720.jpg.webp" alt="LIDAR Scanning Process">
+            
+            <p>
+                In the context of LAS files, LiDAR sensors capture multiple returns per pulse.
             </p>
             
-            <h2>1. Balance</h2>
             <p>
-                Balance refers to the distribution of visual weight in a design. It can be symmetrical (evenly distributed) or asymmetrical (unevenly distributed but still feels balanced). A balanced design feels stable and harmonious.
+                Each captured point is assigned attributes like X, Y, Z coordinates, intensity, classification and return number. 
             </p>
             
-            <img src="../assets/balance.jpg" alt="Example of balance in design">
-            
-            <h2>2. Contrast</h2>
             <p>
-                Contrast creates interest and emphasis by highlighting differences. This can be achieved through color, size, shape, or texture. Strong contrast can direct the user's attention to important elements and improve readability.
-            </p>
-            <p>
-                For example, black text on a white background has high contrast and is easy to read, while light gray text on a white background has low contrast and can be difficult to read.
+                All of which are needed for accurate digital representations of real objects.
             </p>
             
-            <h2>3. Hierarchy</h2>
+            <hr>
+            
+            <h2>LiDAR Sensors Types and Their Special Properties</h2>
+            
             <p>
-                Visual hierarchy guides users through your content in order of importance. Size, color, positioning, and spacing can all be used to establish hierarchy. The most important elements should stand out the most.
-            </p>
-            <p>
-                In web design, this often means making headers larger and bolder than body text, ensuring call-to-action buttons are prominent, and organizing content in a logical flow.
+                LiDAR sensors come in different types, each optimized for specific applications:
             </p>
             
-            <img src="../assets/hierarchy.jpg" alt="Example of visual hierarchy in design">
-            
-            <h2>4. Alignment</h2>
+            <h3>Airborne LiDAR</h3>
             <p>
-                Alignment creates order and organization. Elements should be aligned with each other to create clean lines and a sense of unity. Avoid randomly placing elements; instead, align them with other elements on the page.
-            </p>
-            <p>
-                Consistent alignment makes designs look more professional and easier to follow. It creates invisible lines that help users navigate through the content.
+                Mounted on drones. Ideal for large-scale topographic mapping and flood modeling.
             </p>
             
-            <h2>5. Proximity</h2>
+            <img src="../assets/blog2/avatar-placeholder-generator-500x500.jpg.webp" alt="Airborne LiDAR Example">
+            
+            <h3>Terrestrial LiDAR</h3>
             <p>
-                Proximity involves grouping related items together. Elements that are close to each other are perceived as related, while elements that are far apart are perceived as separate.
-            </p>
-            <p>
-                Use spacing to group related information and separate different sections. This helps users understand the structure of your content at a glance.
+                Used on tripods or vehicles. Captures high resolution ground level scans.
             </p>
             
-            <h2>6. Repetition</h2>
+            <h3>Mobile LiDAR</h3>
             <p>
-                Repetition strengthens unity and consistency. Repeating colors, shapes, textures, or other elements throughout a design ties it together and creates a cohesive look and feel.
-            </p>
-            <p>
-                In web design, this means using consistent colors, fonts, and styles across all pages, which also reinforces brand identity.
+                Typically mounted on moving vehicles. Allows rapid 3D mapping. (Usually for roads and railways)
             </p>
             
-            <img src="../assets/repetition.jpg" alt="Example of repetition in design">
-            
-            <h2>7. White Space</h2>
+            <h3>Bathymetric LiDAR</h3>
             <p>
-                White space (or negative space) is the empty space around elements. It gives elements room to breathe and helps users focus on what's important. Don't be afraid of empty space – it's a powerful design tool.
+                Uses green wavelength lasers which can penetrate water. Used to map underwater terrains and coastal regions.
             </p>
+            
+            <h3>Solid-State LiDAR</h3>
             <p>
-                Cluttered designs can overwhelm users and make information hard to process. Strategic use of white space improves readability and user experience.
+                A compact, mechanically simple alternative to traditional LiDAR. Used in EV's for real-time object detection.
+            </p>
+            
+            <blockquote>
+                Each type of LiDAR has its own advantages. The choice depends on the specific application.
+            </blockquote>
+            
+            <p>
+                Key factors that influence the selection are usually the level of detail needed, the scale of the project and the minimum capture time.
+            </p>
+            
+            <h2>Connection to LAS File Format</h2>
+            
+            <p>
+                The choice of LiDAR sensor directly impacts the structure and content of the resulting LAS files:
+            </p>
+            
+            <ul>
+                <li><strong>Point Density:</strong> Airborne LiDAR typically produces less dense point clouds compared to terrestrial systems, affecting the resolution of the final dataset.</li>
+                <li><strong>Return Types:</strong> Different sensors capture varying numbers of returns, which are stored in the point records of LAS files.</li>
+                <li><strong>Metadata Requirements:</strong> Each sensor type requires specific metadata fields to properly interpret the captured data.</li>
+                <li><strong>Classification Challenges:</strong> Data from different sensors may require unique classification approaches when processing the LAS files.</li>
+            </ul>
+            
+            <p>
+                Understanding these relationships helps data scientists and engineers choose the right tools and approaches for their specific LiDAR data processing needs.
             </p>
             
             <h2>Conclusion</h2>
+            
             <p>
-                These design principles are just the beginning. As you apply them to your projects, you'll develop an eye for what works and what doesn't. Remember that good design is about solving problems and creating experiences, not just making things look pretty.
+                The variety of LiDAR sensor types offers flexibility for different scanning applications. Each type produces unique data characteristics that must be considered when processing the resulting LAS files.
             </p>
+            
             <p>
-                Practice these principles consistently, and you'll see a significant improvement in your design work.
+                As LiDAR technology continues to evolve, we can expect even more specialized sensors to emerge, further expanding the capabilities and applications of this powerful remote sensing technology.
+            </p>
+            
+            <p>
+                Thank you for reading!
             </p>
         </article>
     </main>
-
-    <footer>
-        <p>&copy; 2023 My Blog. All rights reserved.</p>
-    </footer>
 </body>
 </html> 
