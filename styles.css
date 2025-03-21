@@ -181,6 +181,34 @@ main {
     margin-bottom: 1.5rem;
 }
 
+/* List styling */
+.blog-post ul, 
+.blog-post ol {
+    margin: 1.5rem 0 2rem 2rem;
+}
+
+.blog-post li {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    padding-left: 0.5rem;
+}
+
+.blog-post ul li {
+    list-style-type: disc;
+}
+
+.blog-post ol li {
+    list-style-type: decimal;
+}
+
+.blog-post blockquote {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border-left: 4px solid #3366cc;
+    background-color: #f5f7fa;
+    font-style: italic;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .nav-links li {
